@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="energysaver.com.energykinect.BuildingInfoPOneActivity"
+    tools:showIn="@layout/activity_building_info_pone"
+    >
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="12"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_of_building"
+        android:layout_row="0"
+        android:layout_column="0"
+        />
+
+    <Spinner
+        android:id="@+id/buildingTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/type_of_building_spinner"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:gravity="end"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/working_hours"
+        android:layout_row="1"
+        android:layout_column="0"
+        />
+
+    <Spinner
+        android:id="@+id/workingHoursSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/working_hours_spinner"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:gravity="end"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/working_days_per_week"
+        android:layout_row="2"
+        android:layout_column="0"
+        />
+
+    <Spinner
+        android:id="@+id/workingDaysSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/working_days_per_week_spinner"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:gravity="end"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_floors"
+        android:layout_row="3"
+        android:layout_column="0"
+        />
+
+    <Spinner
+        android:id="@+id/floorCountSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/number_of_floors_spinner"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:gravity="end"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/building_area"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:gravity="center_horizontal"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/builtUpAreaWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <EditText
+            android:id="@+id/builtUpArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/built_up_area"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/conditionalAreaWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <EditText
+            android:id="@+id/conditionalArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/conditional_area"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/totalAboveGradeWallAreaWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <EditText
+            android:id="@+id/totalAboveGradeWallArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/total_above_grade_wall_area"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/verticalWallAreaPercentWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <EditText
+            android:id="@+id/verticalWallAreaPercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/vertical_wall_area_percent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/totalRoofAreaWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_row="9"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <EditText
+            android:id="@+id/totalRoofArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/total_roof_area"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/skylightRoofAreaPercentWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_row="10"
+        android:layout_column="0"
+        android:layout_columnSpan="2">
+        <EditText
+            android:id="@+id/skylightRoofAreaPercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/skylight_roof_area_percent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="11"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:text="@string/content_building_info_pone_button"
+        android:onClick="onContentBuildingPageOneClick"/>
+
+</GridLayout>
+
+</ScrollView>

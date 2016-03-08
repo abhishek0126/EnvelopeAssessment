@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="energysaver.com.energykinect">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".LaunchActivity"
+            android:label="@string/title_activity_launch"
+            android:theme="@style/MyMaterialTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                =
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".PropertyDetailsActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.LaunchActivity" />
+        </activity>
+
+        <activity
+            android:name=".AgentDetailsActivity"
+            android:label="@string/title_activity_agent_details"
+            android:parentActivityName=".PropertyDetailsActivity"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustResize|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.PropertyDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".BuildingInfoPOneActivity"
+            android:label="@string/title_activity_building_info_pone"
+            android:parentActivityName=".AgentDetailsActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.AgentDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".BuildingEnvelopeDetails"
+            android:label="@string/title_activity_building_envelope_details"
+            android:parentActivityName=".BuildingInfoPOneActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.BuildingInfoPOneActivity" />
+        </activity>
+        <activity
+            android:name=".OtherDetailsPartOneActivity"
+            android:label="@string/title_activity_other_details_part_one"
+            android:parentActivityName=".BuildingEnvelopeDetails"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.BuildingEnvelopeDetails" />
+        </activity>
+        <activity
+            android:name=".DBTestActivity"
+            android:label="@string/title_activity_dbtest"
+            android:parentActivityName=".PropertyDetailsActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.PropertyDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".ShowBuildingDataActivity"
+            android:label="@string/title_activity_show_building_data"
+            android:parentActivityName=".BuildingEnvelopeDetails"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="energysaver.com.energykinect.BuildingEnvelopeDetails" />
+        </activity>
+        <activity
+            android:name=".ShowDetailsFront"
+            android:label="@string/title_activity_show_details_front"
+            android:theme="@style/MyMaterialTheme" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Envelope Assessment</string>
+    <string name="action_settings">Settings</string>
+    <string name="property_details_heading"><u>Envelope Assessment</u></string>
+    <string name="building_name">Building Name</string>
+    <string name="building_id">Unique Building NickName(ID)</string>
+    <string name="construction_year">Year of Construction</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">PIN Code</string>
+    <string name="property_details_next_screen">Next</string>
+
+    <string name="title_activity_agent_details">Envelope Assessment</string>
+    <string name="agent_name">Enter Your name</string>
+    <string name="agent_email">Enter Your Email Address</string>
+    <string name="agent_company">Enter Your Company</string>
+    <string name="agent_mobile">Enter Your Mobile Number</string>
+    <string name="agent_name_next_screen">Next</string>
+    <string name="title_activity_building_info_pone">Envelope Assessment</string>
+
+    <string name="type_of_building">Type Of Building</string>
+    <string-array name="type_of_building_spinner">
+        <item>Office</item>
+        <item>Hotel</item>
+        <item>Hospital</item>
+        <item>School</item>
+        <item>Shopping Mall</item>
+        <item>Others</item>
+    </string-array>
+    <string name="working_hours">Working Hours</string>
+    <string-array name="working_hours_spinner">
+        <item>Day Time</item>
+        <item>24 hour</item>
+    </string-array>
+    <string name="working_days_per_week">Working Days Per Week</string>
+    <string-array name="working_days_per_week_spinner">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="number_of_floors">Number Of Floors</string>
+    <string-array name="number_of_floors_spinner">
+        <item>	1	</item>
+        <item>	2	</item>
+        <item>	3	</item>
+        <item>	4	</item>
+        <item>	5	</item>
+        <item>	6	</item>
+        <item>	7	</item>
+        <item>	8	</item>
+        <item>	9	</item>
+        <item>	10	</item>
+        <item>	11	</item>
+        <item>	12	</item>
+        <item>	13	</item>
+        <item>	14	</item>
+        <item>	15	</item>
+        <item>	16	</item>
+        <item>	17	</item>
+        <item>	18	</item>
+        <item>	19	</item>
+        <item>	20	</item>
+    </string-array>
+    <string name="content_building_info_pone_button">Next</string>
+    <string name="building_area"><u>Building Area(Excluding Basement)</u></string>
+    <string name="built_up_area">Built Up Area(sqm)</string>
+    <string name="conditional_area">Conditional Area(sqm)</string>
+    <string name="total_above_grade_wall_area">Total Above Grade Wall Area</string>
+    <string name="vertical_wall_area_percent">Vertical Wall Area(%)</string>
+    <string name="total_roof_area">Total Roof Area(sqm)</string>
+    <string name="skylight_roof_area_percent">SkyLight Roof Area(%)</string>
+    <string name="title_activity_building_envelope_details">Envelope Assessment</string>
+
+    <string name="window_to_wall_ratio">Window to Wall Ratio(%)</string>
+    <string name="glazing_solar_heat_gain_coefficient">Glazing Solar Heat gain Coefficient</string>
+    <string name="glazing_u_factor">Glazing U-Factor(W/m²-°C)</string>
+    <string name="visible_light_transmittance">Visible Light Transmittance(VLT)</string>
+    <string name="air_leakage_rates">Air Leakage Rates(l/s-m²)</string>
+    <string name="skylight_solar_heat_gain_coefficient">Skylight Solar Heat Gain Coefficient</string>
+    <string name="skylight_u_factor">Skylight U-factor(W/m²-°C)</string>
+
+    <string name="opaque_assembly"><u>Opaque Assembly</u></string>
+    <string name="roof_u_factor">Roof U-factor(W/m²-°C)</string>
+    <string name="roof_insulation_details"><u>Roof Insulation Details</u></string>
+    <string name="roof_insulation_type">Roof Insulation Type</string>
+    <string name="roof_thickness">Roof Thickness</string>
+    <string name="roof_r_value">Roof R-Value</string>
+    <string name="roof_finish">Roof Finish</string>
+    <string name="wall_u_factor">Wall U-factor(W/m²-°C)</string>
+    <string name="wall_insulation_details">Wall Insulation Details</string>
+    <string name="building_envelope_next_screen">Next</string>
+    <string name="title_activity_other_details_part_one">OtherDetailsPartOneActivity</string>
+
+    <string name="roofs"><u><b>ROOFS</b></u></string>
+    <string name="list_gross_area">List gross Area(sqft)</string>
+    <string name="r_value">R-Value</string>
+    <string name="insulation_entrirely_above_deck">Insulation Entirely Above Deck</string>
+    <string name="metal_buildings">Metal buildings(with R-5 thermal blocks)</string>
+    <string name="attic_and_other">Attick and Other</string>
+    <string name="title_activity_dbtest">DBTestActivity</string>
+
+    <string name="enterBuildingID">Enter Building ID</string>
+    <string name="generateValues">Query</string>
+    <string name="title_activity_show_building_data">ShowBuildingDataActivity</string>
+
+    <string name="showData">SHow Data</string>
+    <string name="title_activity_show_details_front">ShowDetailsFront</string>
+    <string name="title_activity_launch">Energy Kinect-Assessment App</string>
+
+    <string name="collectData">Collect Data</string>
+    <string name="energyKinect">Energy Kinect</string>
+</resources>

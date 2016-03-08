@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="energysaver.com.energykinect.LaunchActivity"
+    tools:showIn="@layout/activity_launch"
+    android:background="@drawable/background_pebbles">
+
+
+    <TextView
+        android:id="@+id/appHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energyKinect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/showData"
+        android:onClick="showData"
+        android:layout_below="@id/appHeadline"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="10dp"/>
+
+    <Button
+        android:layout_below="@id/showButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/collectData"
+        android:onClick="collectData"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="10dp"/>
+</RelativeLayout>
